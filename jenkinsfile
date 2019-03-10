@@ -8,10 +8,8 @@ pipeline{
          
 
 	 steps{
+	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'c3194e7d-08ac-4e5d-82ee-bc3e10afec06', url: 'https://github.com/avsaratchandra/jenkinspipeline.git']]])
 
-         
-
-	     git 'https://github.com/avsaratchandra/jenkinspipeline.git'
 
 	   }
 
