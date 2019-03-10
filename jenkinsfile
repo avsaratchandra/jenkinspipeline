@@ -10,42 +10,13 @@ pipeline{
 
 		withmaven (maven : 'maven_3_5_4'){
 
-		sh 'mvn compile'
+		sh "mvn compile"
 
 		}
 
 	    }
 
-	    }
-
-	    stage('testing stage'){
-
-		steps{
-
-		withmaven(maven : 'maven_3_5_4'){
-
-		sh 'mvn test'
-
-		}
-
-		}
-
-		}
-
-		stage('deployment stage')
-
-		steps{
-
-		withmaven(maven : 'maven_3_5_4'){
-
-		sh 'mvn deploy'
-
-		}
-
-		}
-
-		}
-
-		}
-
-		}
+	     }
+           }
+	  }
+	   
