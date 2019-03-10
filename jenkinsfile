@@ -23,7 +23,7 @@ pipeline{
 
 		withmaven (maven : 'maven_3_5_4'){
 
-		sh "mvn compile"
+		sh 'mvn clean install'
 
 		}
 
